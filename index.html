@@ -1,1 +1,287 @@
-Hello World
+<!doctype html>
+	<html>
+	<head>
+	<!--Carga de Bootstrap-->
+	<link rel="stylesheet" href="css/bootstrap4.css">
+	<!--Carga de fuente awseone-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--Carga iconos Social-->
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+		
+		<meta charset="utf-8">
+	<style>
+		
+		*{
+			list-style: none;
+		}
+		
+		.padre{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+				
+		}
+		
+	
+		
+		header{
+			display: flex;
+			width: 1100px;
+			height: 200px;
+			justify-content:space-around;
+			margin: 0px auto;
+			margin-bottom: 50px;
+			padding: 50px;
+			background: url(images/cabeza.png);
+		
+		}
+		
+		.logo{
+		    order=0;
+			flex:1 1 700px;
+			
+		}
+		
+		.iconos{
+			order=0;
+			padding: 50px;
+			flex: 1 1 auto;
+			align-content: center;
+		}
+		
+		section{
+			display: flex;
+			flex-direction: column;
+			width: 1100px;
+			height: 900px;
+			background: url(images/informacionproyecto.png);
+			justify-content: space-around;
+			margin:auto;
+		}
+			
+		
+		.presentacion{
+			flex-grow: 1;
+			align-self: flex-start;
+			background: url(images/bannerproyecto.png);
+			
+		}
+		
+		.texto{
+			font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+			font-size: 30px;
+			color:black;
+		}
+		
+		.filas{
+			margin-left: 250px;
+		}
+		
+		.Soluciones{
+			flex-grow: 1; 
+		}
+		
+		.segunda{
+			display: flex;
+			flex-direction: row;
+			width: 1100px;
+			height: 300px;
+		}
+		
+		#columna1{
+			border: 1px solid #000000;
+			margin-right: 20px;
+			margin-left: 10px;
+		}
+		
+		#columna2{
+			border: 1px solid #000000;
+		}
+		
+		.contacto{
+			display: flex;
+			flex: 1 1 auto;
+			margin:  20px auto;
+			width: 1100px;
+			height: 400px;
+			background: url(images/contacto.png);
+		}
+		
+		footer{
+			display: flex;
+			position: relative;
+			margin: 20px auto;
+			width: 1100px;
+			height: 100px;
+			background: black;
+		}
+		.integrantes{
+			align-self: center;
+			flex-wrap: wrap;
+			width:250px;
+			height: 100%;
+			border: 1px solid black;
+			background: white;
+		}
+		.integrantes ul li{
+			float: left;
+			text-align: center;
+		}
+		
+		
+		
+		</style>
+		<title>Proyecto "EL Cubo"</title>
+		
+		
+		
+	</head>
+	<body>
+	
+	<div class="padre">
+	
+	<header>
+		
+		
+	<div class="logo"> <h2 align="center">Presentacion del Caso</h2></div>
+	
+	<div class="iconos"> 
+	<a class="btn btn-social-icon btn-lg btn-facebook" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><span class="fa fa-facebook"></span></a>
+	<a class="btn btn-social-icon btn-lg btn-twitter" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><span class="fa fa-twitter"></span></a>
+    <a class="btn btn-social-icon btn-lg btn-google" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-lg']);"><span class="fa fa-google"></span></a>
+	</div>
+		
+
+	</header>
+	
+	<section>
+	
+	<div class="presentacion">
+	<div class="texto">	
+	 <h2>Problema</h2>
+	 
+
+	 <h4>Nuestro equipo vio que la problematica en las cafeterias comunes de nuestro pais, mas especificos de nuestra escuela , era la larga fila para la eleccion de alimentos y una vez elegidos otra fila para pedir que se prepararan , esto hizo que nuestros equipo viera una solucion optima para poder resolver esta problematica y tener mejor resultados en momento del tiempo de espera en una cafeteria
+	   </h4>
+	   
+	 </div>
+	   
+	   
+	   	<img class="img-thumbnail" src="filas.jpeg" alt="Thumbnail image">
+	   
+	 
+	 
+		
+	</div>
+	<br>
+	<br>
+	
+	<div class="Soluciones" >
+	<h2>Soluciones</h2>
+	
+	
+		<h4>1.-Un sistema de menus menos problematicos y mas especifico para su eleccion</h4>
+		<h4>2.-Solucion de agilizar la seleccion de los clientes</h4>
+		<h4>3.-Creacion de un sistema que ayude a seleccionar al cliente y con este proporcionarle un tiempo aproxiamdo de la preparacion de su comida</h4>
+		
+		
+		
+		
+		<img class="img-thumbnail" src="sistema.png" alt="Thumbnail image">
+		
+		
+		
+	</div>
+		</section>
+	<section class="segunda">	
+	
+	<div class="container">
+  <div class="row">
+    <div class="col-md-6" id="columna1">
+      <h2>Ventajas</h2>
+		<h4>1.-Reduccion considerable del tiempo de espara en una cafeteria</h4>
+		<h4>2.-Facilidad de eleccion de comida</h4>
+		<h4>3.-Mejor servicio proporcionado por la cafeteria</h4>
+		<h4>4.-Una atencion personalizada y de mnera amigable</h4>
+    </div>
+    <div class="col-md-5" id="columna2">
+    <h2>Desventajas</h2>
+		<h4>1.-Un gasto en la compra de equipos , que solo se hara la primera vez y despues de 5 años </h4>
+		<h4>2.-Mantenimiento periodico de las maquinas del sistema</h4>
+		<h4>3.-Problemas con clientes que no deseen ocupar este sistema</h4>
+		
+     
+    </div>
+    
+  </div>
+		</div>	
+		
+	</section>
+	
+	<section class ="contacto">
+		
+		<div class="container">
+       
+       <h2 align="center">Contactanos</h2>
+       <br>
+        <form>
+        <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 form-control-label">Nombre</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputNombre3" placeholder="Nombre">
+        </div>
+        </div>
+        <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>
+        <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+       </div>
+       <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 form-control-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      </div>
+    </div>
+  </form>
+</div>
+		
+		
+		
+	</section>
+	
+	
+	<footer>
+	<div class="integrantes">
+	<h4>Integrantes</h4>
+	<ul>
+	   <li>Luis Fernando Aguirre Olvera </li>
+	   <li>Sergio Quintana </li>
+	</ul>
+	</div>
+		
+		
+	</footer>
+	
+	</div>
+	
+
+	
+		
+		
+		
+		
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>		
+		
+		
+	</body>
+
+	
+	
+	
+	
+	
+	
+</html>
